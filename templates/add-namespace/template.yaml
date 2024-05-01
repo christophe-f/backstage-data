@@ -5,8 +5,7 @@ metadata:
   title: Add a Namespace
   description: Add a Namespace
   tags:
-    - Kubernetes
-    - OpenShift
+    - recommended
 spec:
   owner: user1
   system: janus-idp
