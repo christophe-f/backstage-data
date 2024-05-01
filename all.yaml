@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: backstage-data
+  description: A collection of data for a Backstage demo
+spec:
+  targets:
+    - ./templates.yaml

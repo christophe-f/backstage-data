@@ -1,0 +1,53 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: add-namespace
+  title: Add a Namespace
+  description: Add a Namespace
+  tags:
+    - Kubernetes
+    - OpenShift
+spec:
+  owner: user1
+#  system: janus-idp
+  type: resource
+
+  parameters:
+    - title: Provide information about the existing component
+      required:
+        - orgName
+        - repoName
+        - componentName
+      properties:
+        orgName:
+          title: Organization Name
+          type: string
+        repoName:
+          title: Repository Name
+          type: string
+        componentName:
+          title: Component Name
+          type: string
+          description: Attach the techdocs to an existing component
+          ui:field: EntityPicker
+          ui:options:
+            catalogFilter:
+              kind:
+                - Component
+
+  steps:
+    - id: sourceCodeTemplate
+      name: Generating the Source Code Component
+      action: fetch:template
+      input:
+        url: ./skeleton
+        values:
+          orgName: ${{ parameters.orgName }}
+
+  output:
+    links:
+      - title: Open the Source Code Repository
+        url: ${{ steps.publish.output.remoteUrl }}
+      - title: Open the Catalog Info Component
+        icon: catalog
+        entityRef: ${{ steps.register.output.entityRef }}
