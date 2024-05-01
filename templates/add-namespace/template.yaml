@@ -9,8 +9,8 @@ metadata:
     - OpenShift
 spec:
   owner: user1
-#  system: janus-idp
-  type: resource
+  system: janus-idp
+  type: service
 
   parameters:
     - title: Provide information about the existing component
