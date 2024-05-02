@@ -1,11 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: add-namespace
-  title: Add a Namespace
-  description: Add a Namespace
+  name: run-ansible-job
+  title: Run an Ansible Job
+  description: Select an Ansible Job and launch it
   tags:
-    - Kubernetes
+    - Ansible
     - OpenShift
 spec:
   owner: user1

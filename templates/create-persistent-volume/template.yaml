@@ -1,11 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: add-namespace
-  title: Add a Namespace
-  description: Add a Namespace
+  name: create-persistent-volume
+  title: Create a Persistent Volume
+  description: Create a persistent volume for your application
   tags:
-    - Kubernetes
+    - Storage
     - OpenShift
 spec:
   owner: user1

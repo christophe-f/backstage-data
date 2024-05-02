@@ -1,12 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: add-namespace
-  title: Add a Namespace
-  description: Add a Namespace
+  name: onboard-user
+  title: Onboard a New User
+  description: Add a user to an application
   tags:
-    - Kubernetes
-    - OpenShift
+    - recommended
 spec:
   owner: user1
   system: janus-idp

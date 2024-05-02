@@ -1,11 +1,10 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: add-namespace
-  title: Add a Namespace
-  description: Add a Namespace
+  name: migrate-vm-openshift
+  title: Migrate VM to OpenShift
+  description: Select an existing VM, analyze it and migrate it to OpenShift
   tags:
-    - Kubernetes
     - OpenShift
 spec:
   owner: user1

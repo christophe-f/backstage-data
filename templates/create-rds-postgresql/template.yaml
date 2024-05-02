@@ -1,11 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: add-namespace
-  title: Add a Namespace
-  description: Add a Namespace
+  name: create-rds-postgresql
+  title: Create a RDS PostgreSQL
+  description: Create an AWS RDS PostgreSQL database
   tags:
-    - Kubernetes
+    - Database
     - OpenShift
 spec:
   owner: user1

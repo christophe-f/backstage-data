@@ -7,8 +7,8 @@ spec:
   type: url
   targets:
     - templates/add-namespace/template.yaml
-#    - templates/create-persistent-volume/template.yaml
-#    - templates/create-rds-postgresql/template.yaml
-#    - templates/migrate-vm-openshift/template.yaml
-#    - templates/onboard-user/template.yaml
-#    - templates/run-ansible-job/template.yaml
+    - templates/create-persistent-volume/template.yaml
+    - templates/create-rds-postgresql/template.yaml
+    - templates/migrate-vm-openshift/template.yaml
+    - templates/onboard-user/template.yaml
+    - templates/run-ansible-job/template.yaml
